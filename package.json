@@ -9,6 +9,7 @@
     ],
     "repository": "git@github.com:vico1993/basic-ts-repo.git",
     "scripts": {
+        "day1": "ts-node src/day1.ts",
         "build": "tsc -p tsconfig.json",
         "watch": "nodemon --watch \"src/**\" --ext \"ts,json\" --ignore \"src/**/*.spec.ts\" --exec \"ts-node src/index.ts\"",
         "lint": "eslint --ext .ts ."
