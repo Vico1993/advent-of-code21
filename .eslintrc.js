@@ -1,6 +1,6 @@
 module.exports = {
     parser: "@typescript-eslint/parser",
-    plugins: ["@typescript-eslint", "jest", "babel"],
+    plugins: ["@typescript-eslint", "babel"],
     parserOptions: {
         ecmaVersion: 2020,
         sourceType: "module",
@@ -18,16 +18,10 @@ module.exports = {
             rules: {
                 // you should turn the original rule off *only* for test files
                 "@typescript-eslint/unbound-method": "off",
-                "jest/unbound-method": "error",
             },
         },
     ],
     rules: {
-        "jest/no-disabled-tests": "warn",
-        "jest/no-focused-tests": "error",
-        "jest/no-identical-title": "error",
-        "jest/prefer-to-have-length": "warn",
-        "jest/valid-expect": "error",
         "babel/valid-typeof": 1,
         "babel/no-invalid-this": 1,
         quotes: [2, "double", { avoidEscape: true }],
