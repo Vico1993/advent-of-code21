@@ -1,6 +1,6 @@
 import { readInput } from "./tools";
 
-const data = readInput("./input/day1.text");
+const data = readInput("./input/day1.txt");
 
 /**
  * Level 1 of day1
